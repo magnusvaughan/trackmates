@@ -7,7 +7,7 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
         <!-- Styles -->
         <style>
@@ -80,9 +80,21 @@
             @endif
 
             <div class="content">
-                <div id="app"></div>
+                <h1 class="page-header">Trackmates</h1>
+                <p>Find your perfect <a href="{{ route('home') }}">collaborator</a></p>
             </div>
         </div>
         <script src="/js/app.js"></script>
     </body>
 </html>
+
+
+
+@extends('layouts.app')
+
+@section('content')
+    <div class="content">
+        <h1>Trackmates</h1>
+        <p>Find your perfect <a href="{{ route('home') }}">collaborator</a></p>
+    </div>
+@endsection
