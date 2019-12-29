@@ -1,20 +1,47 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Portfolio from './Portfolio';
 
-function Home() {
-    return (
-        <div className="container">
-            <div className="row justify-content-center">
-                <div className="col-md-8">
-                    <div className="card">
-                        <div className="card-header">Welcome to Trackmates</div>
+class Home extends React.Component {
 
-                        <div className="card-body">Let's find you a collaborator</div>
-                    </div>
+    constructor(props) {
+        super(props);
+        this.state = { people: [
+        {
+            name: "Dave Smith",
+            daw: "Ableton Live",
+            link: "https://i.pravatar.cc/300?img=7"
+        },
+        {
+            name: "Diane Jones",
+            daw: "Ableton Live",
+            link: "https://i.pravatar.cc/300?img=9"
+        },
+        {
+            name: "Alan Caxton",
+            daw: "Logic X",
+            link: "https://i.pravatar.cc/300?img=3"
+        }
+        ]};
+      }
+
+    render() {
+
+        console.log(this.state.people);
+
+        const items = this.state.people.map(
+            person => <Portfolio name={person.name} daw={person.daw} link={person.link}/>
+        );
+
+        return (
+            <div className="container-fluid">
+                <div className="row justify-content-center">
+                    {items}
                 </div>
             </div>
-        </div>
-    );
+        );
+    }
+
 }
 
 export default Home;
