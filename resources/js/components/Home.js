@@ -21,6 +21,11 @@ class Home extends React.Component {
             name: "Alan Caxton",
             daw: "Logic X",
             link: "https://i.pravatar.cc/300?img=3"
+        },
+        {
+        name: "Jenny Miller",
+            daw: "Reason",
+            link: "https://i.pravatar.cc/300?img=10"
         }
         ]};
       }

@@ -68952,6 +68952,10 @@ function (_React$Component) {
         name: "Alan Caxton",
         daw: "Logic X",
         link: "https://i.pravatar.cc/300?img=3"
+      }, {
+        name: "Jenny Miller",
+        daw: "Reason",
+        link: "https://i.pravatar.cc/300?img=10"
       }]
     };
     return _this;
@@ -69036,7 +69040,7 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-md-4"
+        className: "col-md-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "portfolio"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -69044,14 +69048,14 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-image-wrapper"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        "class": "img-fluid",
+        "class": "img-fluid rounded-circle",
         src: this.props.link,
         alt: "person image"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        "class": "card-body"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
         "class": "card-title"
-      }, this.props.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      }, this.props.name)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        "class": "card-body"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         "class": "card-text"
       }, this.props.daw), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "#",
